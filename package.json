@@ -1,0 +1,23 @@
+{
+  "name": "spotify-project",
+  "version": "1.0.0",
+  "description": "Spotify-clone node.js, mdb",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Ankur Srivastava",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
