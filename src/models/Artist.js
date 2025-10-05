@@ -57,6 +57,6 @@ const artistSchema = new mongoose.Schema(
 
 /// compi;e fit  tge model
 
-const Artist = mongoose.model("Album", artistSchema);
+const Artist = mongoose.model("Artist", artistSchema);
 
 module.exports = Artist;

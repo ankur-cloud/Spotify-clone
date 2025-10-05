@@ -66,6 +66,6 @@ const songSchema = new mongoose.Schema(
 
 /// compi;e fit  tge model
 
-const Song = mongoose.model("Album", songSchema);
+const Song = mongoose.model("Song", songSchema);
 
 module.exports = Song;

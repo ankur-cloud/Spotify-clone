@@ -13,7 +13,6 @@ const albumSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       required: [true, "artist is required"],
       ref: "Artist",
-      trim: true,
     },
     releasedDate: {
       type: Date,
@@ -32,7 +31,7 @@ const albumSchema = new mongoose.Schema(
       },
     ],
     genre: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: String,
       ref: "Song",
       trim: true,
     },
