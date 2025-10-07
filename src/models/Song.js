@@ -52,7 +52,7 @@ const songSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    featuredArtist: [
+    featuredArtists: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Artist",

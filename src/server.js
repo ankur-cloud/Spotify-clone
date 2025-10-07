@@ -6,6 +6,8 @@ const { userRouter } = require("./routes/userRoutes");
 const { StatusCodes } = require("http-status-codes");
 const { artistRouter } = require("./routes/artistRoutes");
 const { albumRouter } = require("./routes/albumRoutes");
+const { songRouter } = require("./routes/songRoutes");
+const { playlistRouter } = require("./routes/playlistRoutes");
 
 const app = express();
 //connect to database
@@ -27,8 +29,10 @@ app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/artists", artistRouter);
 app.use("/api/albums", albumRouter);
+app.use("/api/songs", songRouter);
+app.use("/api/playlists", playlistRouter);
 
-// error handler middleweaer
+// error handler middleweaerplaylistRouter
 // 404 /
 app.use((req, res, next) => {
   const error = new Error("Not Found");

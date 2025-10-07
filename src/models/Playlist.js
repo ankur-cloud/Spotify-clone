@@ -53,6 +53,6 @@ const playlistSchema = new mongoose.Schema(
 
 /// compi;e fit  tge model
 
-const Playlist = mongoose.model("Album", playlistSchema);
+const Playlist = mongoose.model("Playlist", playlistSchema);
 
 module.exports = Playlist;
