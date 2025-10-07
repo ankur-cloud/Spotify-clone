@@ -2,25 +2,32 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-const { userRouter } = require("./routes/userRoutes");
+const { userRouter } = require("./src/routes/userRoutes");
 const { StatusCodes } = require("http-status-codes");
-const { artistRouter } = require("./routes/artistRoutes");
-const { albumRouter } = require("./routes/albumRoutes");
-const { songRouter } = require("./routes/songRoutes");
-const { playlistRouter } = require("./routes/playlistRoutes");
+const { artistRouter } = require("./src/routes/artistRoutes");
+const { albumRouter } = require("./src/routes/albumRoutes");
+const { songRouter } = require("./src/routes/songRoutes");
+const { playlistRouter } = require("./src/routes/playlistRoutes");
 
 const app = express();
 //connect to database
+let isConnected = false;
 
 async function connectMongo() {
   try {
     await mongoose.connect(process.env.MONGODB_CONNECTION_STRING);
     console.log("connected");
+    isConnected = true;
   } catch (e) {
     console.log("MONGODB", e);
   }
 }
-connectMongo();
+
+// app.use((req, res, next) => {
+//   if (!isConnected) {
+//     next();
+//   }
+// });
 
 // pass incomiung data
 app.use(express.json());
@@ -51,6 +58,13 @@ app.use((err, req, res) => {
 });
 
 const PORT = process.env.PORT || 1500;
-app.listen(PORT, () => {
-  console.log("listenlisten", PORT);
-});
+async function startServer() {
+  await connectMongo();
+  app.listen(PORT, () => {
+    console.log("listen", PORT);
+  });
+}
+
+startServer();
+
+ 

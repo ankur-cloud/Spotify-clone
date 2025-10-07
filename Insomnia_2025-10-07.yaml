@@ -1,0 +1,1314 @@
+type: collection.insomnia.rest/5.0
+name: User
+meta:
+  id: wrk_89e6213bd5d14c818e6bdc9355818e5c
+  created: 1759588437431
+  modified: 1759646078851
+  description: ""
+collection:
+  - name: Songs
+    meta:
+      id: fld_d0d79374c7df400984765df36514946e
+      created: 1759854269430
+      modified: 1759854269430
+      sortKey: -1759854269430
+      description: ""
+    children:
+      - url: " {{ _.base_url }}/songs"
+        name: createSongs
+        meta:
+          id: req_5d15fc12ea5947c59e92313ec092b1ab
+          created: 1759767872930
+          modified: 1759854294971
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276558
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_08756e8ff3d64311832abe5f87c94ed8
+              name: title
+              value: new song222
+              description: ""
+              disabled: false
+            - id: pair_5a5ecb4230704a8f9ca7757f508d0e3a
+              name: artistId
+              value: 68e213e4b4d04cb733cc2efc
+              description: ""
+              disabled: false
+            - id: pair_9f33bfc44036444ebf382851f20ad216
+              name: albumId
+              value: 68e260f8f29aca348b654e1c
+              description: ""
+              disabled: false
+            - id: pair_701f5cacdae048ea8a4b8320c4c87f78
+              name: duration
+              value: "345"
+              description: ""
+              disabled: false
+            - id: pair_08b3f94ed9874ffbaeb25fa8166f9919
+              name: genre
+              value: pop
+              description: ""
+              disabled: false
+            - id: pair_7b1b93096f1441a4af32b4b3897c4b81
+              name: lyrics
+              value: ""
+              description: ""
+              disabled: false
+            - id: pair_6a52440f6e7140b3a7bc319d7e2a6df5
+              name: isExplicit
+              value: ""
+              description: ""
+              disabled: false
+              type: text
+              fileName: D:\Downloads\Nifty 50_2025-07-15_15-28-13.png
+              multiline: false
+            - id: pair_4106922e0fdf4c06945da4ec6560f47e
+              name: featuredArtists
+              value: '["68e215b876fb20fc95282c42"]'
+              description: ""
+              disabled: false
+            - id: pair_298c95a17fa94e97b5f20f045c57f7bb
+              name: cover
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\Guli-Mata-Hindi.jpg
+            - id: pair_ba3ac6d73459407e84420c13b16e730e
+              name: lyrics
+              value: abcdef
+              description: ""
+              disabled: false
+            - id: pair_53f407cd706942cf9d17f1c6c9ba75d0
+              name: audio
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\deep-abstract-ambient_snowcap-401656.mp3
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/songs?genre=pop&search"
+        name: getSongs
+        meta:
+          id: req_802c2046ee294e6e9606babc53b364a8
+          created: 1759769513959
+          modified: 1759854287032
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276608
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/songs/68e3f9d0245c0eb1bb9907c0"
+        name: getSongById
+        meta:
+          id: req_3d643d6863bb4fa28743a6d4c3972060
+          created: 1759769700392
+          modified: 1759854276581
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276508
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/songs/68e3f166572bf321dda17251"
+        name: updateSongs
+        meta:
+          id: req_0b903d45aed14286827b2224533ea09e
+          created: 1759770555058
+          modified: 1759854297711
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276533
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_08756e8ff3d64311832abe5f87c94ed8
+              name: title
+              value: Guli mata
+              description: ""
+              disabled: false
+            - id: pair_5a5ecb4230704a8f9ca7757f508d0e3a
+              name: artistId
+              value: 68e213e4b4d04cb733cc2efc
+              description: ""
+              disabled: false
+            - id: pair_9f33bfc44036444ebf382851f20ad216
+              name: albumId
+              value: 68e260f8f29aca348b654e1c
+              description: ""
+              disabled: false
+            - id: pair_701f5cacdae048ea8a4b8320c4c87f78
+              name: duration
+              value: "345"
+              description: ""
+              disabled: false
+            - id: pair_08b3f94ed9874ffbaeb25fa8166f9919
+              name: genre
+              value: pop
+              description: ""
+              disabled: false
+            - id: pair_7b1b93096f1441a4af32b4b3897c4b81
+              name: lyrics
+              value: ""
+              description: ""
+              disabled: false
+            - id: pair_6a52440f6e7140b3a7bc319d7e2a6df5
+              name: isExplicit
+              value: ""
+              description: ""
+              disabled: false
+              type: text
+              fileName: D:\Downloads\Nifty 50_2025-07-15_15-28-13.png
+              multiline: false
+            - id: pair_4106922e0fdf4c06945da4ec6560f47e
+              name: featuredArtists
+              value: '["68e215b876fb20fc95282c42"]'
+              description: ""
+              disabled: false
+            - id: pair_298c95a17fa94e97b5f20f045c57f7bb
+              name: cover
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\Guli-Mata-Hindi.jpg
+            - id: pair_ba3ac6d73459407e84420c13b16e730e
+              name: lyrics
+              value: abcdef
+              description: ""
+              disabled: false
+            - id: pair_53f407cd706942cf9d17f1c6c9ba75d0
+              name: audio
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\alone-296348.mp3
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/songs/68e3f166572bf321dda17251"
+        name: deleteSong
+        meta:
+          id: req_c3f615b786094368ae721a0ab6566a03
+          created: 1759771051767
+          modified: 1759854384587
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276583
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_a6c2760202794ec788a21cb7961d7b5e
+          - id: pair_c6c6d780f4244b8dac5e0e1d64712fe7
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5000/api/songs/top?limit=10
+        name: getTopSongs
+        meta:
+          id: req_37efcc850504494aac47bbab4bfb5bed
+          created: 1759771270346
+          modified: 1759854402159
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276545.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5000/api/songs/new-releases?limit=10
+        name: getNewReleases
+        meta:
+          id: req_625bae5723ee40348533fb1685f81dba
+          created: 1759771412164
+          modified: 1759854408782
+          isPrivate: false
+          description: ""
+          sortKey: -1759854276551.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Artist
+    meta:
+      id: fld_42e868a864e94eb382ed17823365bf3f
+      created: 1759854312307
+      modified: 1759854312307
+      sortKey: -1759854312307
+      description: ""
+    children:
+      - url: " {{ _.base_url }}/artists"
+        name: createArtist
+        meta:
+          id: req_16aa5f9f31364180a151d102042ce6f6
+          created: 1759645606761
+          modified: 1759854574328
+          isPrivate: false
+          description: ""
+          sortKey: -1759854572000
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_50a31ccffadd4a8b939dddd6b940339d
+              name: name
+              value: Shreya Ghoshal 3
+              description: ""
+              disabled: false
+            - id: pair_8228ef9d575841ad8bf8e90701b56fd0
+              name: bio
+              value: "Shreya Ghoshal (Bengali pronunciation: [ʃreja ɡʱoʃal]; born 12 March
+                1984) is an Indian singer. Noted for her wide vocal range and
+                versatility,[3][4] she is one of the most prolific and
+                influential singers of India"
+              description: ""
+              disabled: false
+            - id: pair_049a65b3969d4c59ad18d5663f2a211e
+              name: genres
+              value: pop
+              description: ""
+              disabled: false
+            - id: pair_57d2e9399eb249c5b3f71f51f9e63752
+              name: isVerified
+              value: "true"
+              description: ""
+              disabled: false
+            - id: pair_a5dd866f02ad48ef97d436d7250d7cce
+              name: image
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\shreya.webp
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_d066ce3fcc5c4fbd93a535efcb2fe898
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_5244d47d36e841b798a8b9c042423dd7
+          - id: pair_cb95b069832f4856acfb2b9c9d93c0c3
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/artists?genre=pop&search=shreya&page=1&limit=10"
+        name: getArtists
+        meta:
+          id: req_52558862053e411fa3c5a5e7b04ca484
+          created: 1759647546949
+          modified: 1759854579203
+          isPrivate: false
+          description: ""
+          sortKey: -1759854571931.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/artists/68e213e4b4d04cb733cc2efc"
+        name: getArtistById
+        meta:
+          id: req_723c6c50aafd481fa005503c461b0182
+          created: 1759648968460
+          modified: 1759854575593
+          isPrivate: false
+          description: ""
+          sortKey: -1759854571950
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/artists/68e213e4b4d04cb733cc2efc"
+        name: updateArtist
+        meta:
+          id: req_5d07c117070c4539b4706d2145bb78b2
+          created: 1759649579017
+          modified: 1759854580490
+          isPrivate: false
+          description: ""
+          sortKey: -1759854571928.125
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_7d86ca63a38045bda48216941be575cd
+              name: name
+              value: ""
+              description: ""
+              disabled: false
+            - id: pair_e79a8d45293c4434a20c43a00f8466ab
+              name: bio
+              value: ""
+              description: ""
+              disabled: false
+            - id: pair_1c58274851a54eba86b553db0661b2fc
+              name: genres
+              value: pop, romantic
+              description: ""
+              disabled: false
+            - id: pair_beb7b0d75a5d4db9a6901cb01bd43540
+              name: isVerified
+              value: "true"
+              description: ""
+              disabled: false
+            - id: pair_ad979b23135e4af7a3804ebff3465226
+              name: image
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\shry1.jpg
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+            id: pair_15cdbec9178f48d88d3d38387fafd42a
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_55d965199afb485596f5bef453dfcef6
+          - id: pair_54136de955c842e2b0756870ea50e78c
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/artists/68e21655e66c6cd941aaa0b3"
+        name: deleteArtist
+        meta:
+          id: req_aa20f83490ca4cbfb39ae0012f7d90c1
+          created: 1759652548929
+          modified: 1759854571920
+          isPrivate: false
+          description: ""
+          sortKey: -1759854571900
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_b7b173b4e2714287b067a6963357475b
+          - id: pair_08fea4f59d8c4066bbf5b1b034d3ad05
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5000/api/artists/topartists?limit=10
+        name: getTopArtists
+        meta:
+          id: req_d7754ceef9c842658ac0a68e81183ad7
+          created: 1759653123457
+          modified: 1759854578056
+          isPrivate: false
+          description: ""
+          sortKey: -1759854571937.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5000/api/artists/68e213e4b4d04cb733cc2efc/top-songs?limit=10
+        name: getTopSongsArtists
+        meta:
+          id: req_e30bba74cf59459985eabc012074d667
+          created: 1759655801528
+          modified: 1759854576816
+          isPrivate: false
+          description: ""
+          sortKey: -1759854571925
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Albums
+    meta:
+      id: fld_558899c2575542c8907a5bf78788e060
+      created: 1759854325318
+      modified: 1759854325318
+      sortKey: -1759854325318
+      description: ""
+    children:
+      - url: " {{ _.base_url }}/albums"
+        name: createAlbum
+        meta:
+          id: req_cb66f77bca7f45388fb1d65f7d46881f
+          created: 1759659365715
+          modified: 1759854347401
+          isPrivate: false
+          description: ""
+          sortKey: -1759854331867
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_08756e8ff3d64311832abe5f87c94ed8
+              name: title
+              value: new song2alntm4
+              description: ""
+              disabled: false
+            - id: pair_5a5ecb4230704a8f9ca7757f508d0e3a
+              name: artist
+              value: 68e213e4b4d04cb733cc2efc
+              description: ""
+              disabled: false
+            - id: pair_9f33bfc44036444ebf382851f20ad216
+              name: releasedDate
+              value: ""
+              description: ""
+              disabled: false
+            - id: pair_701f5cacdae048ea8a4b8320c4c87f78
+              name: genre
+              value: pop
+              description: ""
+              disabled: false
+            - id: pair_08b3f94ed9874ffbaeb25fa8166f9919
+              name: description
+              value: Old osng
+              description: ""
+              disabled: false
+            - id: pair_7b1b93096f1441a4af32b4b3897c4b81
+              name: isExplicit
+              value: ""
+              description: ""
+              disabled: false
+            - id: pair_6a52440f6e7140b3a7bc319d7e2a6df5
+              name: coverImage
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\Nifty 50_2025-07-15_15-28-13.png
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/albums?genre=pop&search=old&page=1"
+        name: getAlbums
+        meta:
+          id: req_0a67795f875c4a8fa65b5e12e183df4f
+          created: 1759665317457
+          modified: 1759854334988
+          isPrivate: false
+          description: ""
+          sortKey: -1759854331942
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/albums/68e25eee7360265d1fa59d59"
+        name: getAlbumsById
+        meta:
+          id: req_725b23c51b6a4625a7a6ac7d294d038d
+          created: 1759666034134
+          modified: 1759854337219
+          isPrivate: false
+          description: ""
+          sortKey: -1759854331892
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/albums/68e261666c2c08faccb22457"
+        name: deleteAlbum
+        meta:
+          id: req_c68b8f1a11144cbebea2d92f02f51157
+          created: 1759666735208
+          modified: 1759854331878
+          isPrivate: false
+          description: ""
+          sortKey: -1759854331842
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_a6c2760202794ec788a21cb7961d7b5e
+          - id: pair_c6c6d780f4244b8dac5e0e1d64712fe7
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Playlists
+    meta:
+      id: fld_9c8f2301fa304e019866c38764ca568b
+      created: 1759854365211
+      modified: 1759854365211
+      sortKey: -1759854365211
+      description: ""
+    children:
+      - url: " {{ _.base_url }}/playlists/user/me"
+        name: createPlaylist
+        meta:
+          id: req_d50de5899e62406386858535bbba79ac
+          created: 1759775162922
+          modified: 1759854540637
+          isPrivate: false
+          description: ""
+          sortKey: -1759854371417
+        method: GET
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_08756e8ff3d64311832abe5f87c94ed8
+              name: name
+              value: Swimming repeat Leg day
+              description: ""
+              disabled: false
+            - id: pair_08b3f94ed9874ffbaeb25fa8166f9919
+              name: description
+              value: new playlsit 12
+              description: ""
+              disabled: false
+            - id: pair_7b1b93096f1441a4af32b4b3897c4b81
+              name: isPublic
+              value: "true"
+              description: ""
+              disabled: false
+            - id: pair_6a52440f6e7140b3a7bc319d7e2a6df5
+              name: coverImage
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\JIOFIN EQ_2025-06-20_21-33-59.png
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists?search"
+        name: getPlaylists
+        meta:
+          id: req_6d42bf2c0a054fa9acaa1c96f15b9480
+          created: 1759776324517
+          modified: 1759854370952
+          isPrivate: false
+          description: ""
+          sortKey: -1759854370917
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists?search=Swimming"
+        name: getUserPlaylists
+        meta:
+          id: req_36ce4c85a70b4faa88ba99e3d91e0364
+          created: 1759776777675
+          modified: 1759854392003
+          isPrivate: false
+          description: ""
+          sortKey: -1759854370954.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/68e40e8d02f20e4db8078f93"
+        name: getPlaylistById
+        meta:
+          id: req_9327e55c50334991b8e34083d35f5627
+          created: 1759777283496
+          modified: 1759854379708
+          isPrivate: false
+          description: ""
+          sortKey: -1759854370967
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/68e40e8d02f20e4db8078f93"
+        name: updatePlaylist
+        meta:
+          id: req_c43766d4472c4190818397a3da746df9
+          created: 1759777852368
+          modified: 1759854423368
+          isPrivate: false
+          description: ""
+          sortKey: -1759854370960.75
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_08756e8ff3d64311832abe5f87c94ed8
+              name: name
+              value: updae playlist
+              description: ""
+              disabled: false
+            - id: pair_5a5ecb4230704a8f9ca7757f508d0e3a
+              name: description
+              value: description
+              description: ""
+              disabled: false
+            - id: pair_9f33bfc44036444ebf382851f20ad216
+              name: isPublic
+              value: "true"
+              description: ""
+              disabled: false
+            - id: pair_298c95a17fa94e97b5f20f045c57f7bb
+              name: coverImage
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\dog.jpg
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/68e40e8d02f20e4db8078f93"
+        name: deletePlaylist
+        meta:
+          id: req_bb95644068e5483c847004f6950d6c70
+          created: 1759778617378
+          modified: 1759854382140
+          isPrivate: false
+          description: ""
+          sortKey: -1759854370942
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_a6c2760202794ec788a21cb7961d7b5e
+          - id: pair_c6c6d780f4244b8dac5e0e1d64712fe7
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/68e40b5465529486dcad5bb9/add-songs"
+        name: addSongsToPlaylist
+        meta:
+          id: req_b5371b7539714aa78c5cf50e9b0c5927
+          created: 1759779341902
+          modified: 1759854516805
+          isPrivate: false
+          description: ""
+          sortKey: -1759854370992
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >
+            {
+              "songIds": ["68e3f9d0245c0eb1bb9907c0", "68e3ef91f621ae1b72d28f4d"]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url
+          }}/playlists/68e40b5465529486dcad5bb9/remove-songs/68e3f9d0245c0eb1bb\
+          9907c0"
+        name: removeSongsFromPlaylist
+        meta:
+          id: req_4beac838282c44aba4b1b18f16e0c7f3
+          created: 1759780164539
+          modified: 1759854533798
+          isPrivate: false
+          description: ""
+          sortKey: -1759854371317
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/68e40b5465529486dcad5bb9/add-collaborator"
+        name: addCollaboratorToPlaylist
+        meta:
+          id: req_433d822922154eb8b773e9d2b6963601
+          created: 1759781139118
+          modified: 1759854523086
+          isPrivate: false
+          description: ""
+          sortKey: -1759854371117
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "userId": "68e13a9496b8158074d9b46b"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/68e40b5465529486dcad5bb9/remove-collaborator"
+        name: removeCollaboratorFromPlaylist
+        meta:
+          id: req_2a33736bec8e4c28a9d663b3bd81fbda
+          created: 1759781685622
+          modified: 1759854528936
+          isPrivate: false
+          description: ""
+          sortKey: -1759854371217
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "userId": "68e13a9496b8158074d9b46b"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_deedac7e033a4aad9e2f3ca9f23dbc64
+          - id: pair_6822a5bf166344aaadd66fa3cd9ed64b
+            name: Authorization
+            value: "{{ _.token }}"
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/playlists/featured?limit=10"
+        name: getFeaturedPlaylists
+        meta:
+          id: req_b59663d4dc304438a5a1edacffb4eea5
+          created: 1759782313132
+          modified: 1759854377410
+          isPrivate: false
+          description: ""
+          sortKey: -1759854371017
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Users
+    meta:
+      id: fld_70b3d6fc15684539bb2244fafaf4a139
+      created: 1759854457827
+      modified: 1759854477604
+      sortKey: -1759655996444.4766
+      description: ""
+    children:
+      - url: " {{ _.base_url }}/users/register"
+        name: registerUser
+        meta:
+          id: req_63ea4495d0b14d54b5caba21169470ee
+          created: 1759588437438
+          modified: 1759854492169
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482930
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Ankur2",
+              "email": "ankur2@email.com",
+              "password": "123456ABC"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/users/login"
+        name: loginUser
+        meta:
+          id: req_4983b7b9525b4316947b6aa766673795
+          created: 1759592312284
+          modified: 1759854482759
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482730
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "email": "ankur2@email.com",
+              "password": "123456ABC"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/users/profile"
+        name: profile
+        meta:
+          id: req_95b92e46881d4d4b8cafa423eaa967be
+          created: 1759593564722
+          modified: 1759854490160
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482830
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_bb28d2a574cc45c5b8422aed4cd9b959
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_15000d6f06ee43f8a0d7e176553435c2
+          - id: pair_68e9dca7e0244bc1bbeb40e769952a83
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTEzYTk0OTZiODE1ODA3NGQ5YjQ2YiIsImlhdCI6MTc1OTU5Mjk3OSwiZXhwIjoxNzYwNDU2OTc5fQ.lQQRtlmI2OnanBQIWJQok2VPhkX5iYK3LJq3P0GZTd0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/users/profile"
+        name: updateUserProfile
+        meta:
+          id: req_0ce1cc0e14da456fa04ff1ae5ceed14a
+          created: 1759597157798
+          modified: 1759854503081
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482848.75
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_001b67adb9f346f5867053d3d8640be2
+              name: name
+              value: Ankur2
+              description: ""
+              disabled: false
+            - id: pair_971c89275bb4401ca71ecbc2f9c8a037
+              name: profilePicture
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: D:\Downloads\testimage.png
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_660438d699224daabe84bb2b3e8ac236
+          - id: pair_f6b38fcf11f84995a6b28e8d83956f57
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTEzYTk0OTZiODE1ODA3NGQ5YjQ2YiIsImlhdCI6MTc1OTU5Mjk3OSwiZXhwIjoxNzYwNDU2OTc5fQ.lQQRtlmI2OnanBQIWJQok2VPhkX5iYK3LJq3P0GZTd0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/users/liked-song/68e3f9d0245c0eb1bb9907c0"
+        name: toggleLikeSong
+        meta:
+          id: req_d1c415e7da9644e8ba8a732b07f20b41
+          created: 1759782777131
+          modified: 1759854501293
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482842.5
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_660438d699224daabe84bb2b3e8ac236
+          - id: pair_f6b38fcf11f84995a6b28e8d83956f57
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTEzYTk0OTZiODE1ODA3NGQ5YjQ2YiIsImlhdCI6MTc1OTU5Mjk3OSwiZXhwIjoxNzYwNDU2OTc5fQ.lQQRtlmI2OnanBQIWJQok2VPhkX5iYK3LJq3P0GZTd0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/users/follow-artist/68e213e4b4d04cb733cc2efc"
+        name: toggleFollowArtist
+        meta:
+          id: req_e8a0d8af751e40a6a2e0816518286e07
+          created: 1759783738576
+          modified: 1759854499897
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482855
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_660438d699224daabe84bb2b3e8ac236
+          - id: pair_f6b38fcf11f84995a6b28e8d83956f57
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTEzYTk0OTZiODE1ODA3NGQ5YjQ2YiIsImlhdCI6MTc1OTU5Mjk3OSwiZXhwIjoxNzYwNDU2OTc5fQ.lQQRtlmI2OnanBQIWJQok2VPhkX5iYK3LJq3P0GZTd0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: " {{ _.base_url }}/users/follow-playlist/68e40b5465529486dcad5bb9"
+        name: toggleFollowPlaylist
+        meta:
+          id: req_5770b876412d4133982c5538ceec7a58
+          created: 1759784940165
+          modified: 1759854498459
+          isPrivate: false
+          description: ""
+          sortKey: -1759854482880
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+            id: pair_660438d699224daabe84bb2b3e8ac236
+          - id: pair_f6b38fcf11f84995a6b28e8d83956f57
+            name: Authorization
+            value: Bearer
+              eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTEzYTk0OTZiODE1ODA3NGQ5YjQ2YiIsImlhdCI6MTc1OTU5Mjk3OSwiZXhwIjoxNzYwNDU2OTc5fQ.lQQRtlmI2OnanBQIWJQok2VPhkX5iYK3LJq3P0GZTd0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e80c1efb3d6c5c0bf1ce7ae233a068ac9c850b4d
+    created: 1759588437434
+    modified: 1759588437434
+environments:
+  name: Base Environment
+  meta:
+    id: env_e80c1efb3d6c5c0bf1ce7ae233a068ac9c850b4d
+    created: 1759588437433
+    modified: 1759652086244
+    isPrivate: false
+  data:
+    base_path: http://localhost:5000/api
+    base_url: http://localhost:5000/api
+    token: Bearer
+      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZTEzYTk0OTZiODE1ODA3NGQ5YjQ2YiIsImlhdCI6MTc1OTU5Mjk3OSwiZXhwIjoxNzYwNDU2OTc5fQ.lQQRtlmI2OnanBQIWJQok2VPhkX5iYK3LJq3P0GZTd0
