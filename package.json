@@ -5,8 +5,11 @@
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js > output.log 2>&1",
+    "start": "node src/server.js",
     "build": "node src/server.js"
+  },
+  "engines": {
+    "node": "22.x"
   },
   "keywords": [],
   "author": "Ankur Srivastava",
